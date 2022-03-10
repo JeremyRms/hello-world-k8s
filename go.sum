@@ -1,0 +1,9 @@
+github.com/mitchellh/mapstructure v1.1.2/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
+github.com/philhofer/fwd v1.0.0 h1:UbZqGr5Y38ApvM/V/jEljVxwocdweyH+vmYvRPBnbqQ=
+github.com/philhofer/fwd v1.0.0/go.mod h1:gk3iGcWd9+svBvR0sR+KPcfE+RNWozjowpeBVG3ZVNU=
+github.com/signalsciences/sigsci-module-golang v1.11.0 h1:Wup8AtUArnnVznu1XzT5gB5+eHufbcdbNXJLsKcS8k4=
+github.com/signalsciences/sigsci-module-golang v1.11.0/go.mod h1:01k5hiAwRSCda1B8ELmhOy4WgUuXfJRzWx9w0KLEKCg=
+github.com/signalsciences/tlstext v1.2.0 h1:ps1ZCoDz93oMK0ySe7G/2J0dpTT32cN20U+/xy0S7uk=
+github.com/signalsciences/tlstext v1.2.0/go.mod h1:DKD8bjL8ZiedHAgWtcpgZm6TBAnmAlImuyJX2whrm3k=
+github.com/tinylib/msgp v1.1.0 h1:9fQd+ICuRIu/ue4vxJZu6/LzxN0HwMds2nq/0cFvxHU=
+github.com/tinylib/msgp v1.1.0/go.mod h1:+d+yLhGm8mzTaHzB+wgMYrodPfmZrzkirds8fDWklFE=
