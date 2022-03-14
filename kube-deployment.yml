@@ -31,7 +31,10 @@ spec:
     spec:
       containers:
       - name: helloworld
-        image: asia.gcr.io/effective-might-323902/hello-world-k8s:1.0.5
+        image: asia.gcr.io/effective-might-323902/hello-world-k8s:1.0.6
+        envFrom:
+          - configMapRef:
+              name: hello-world-k8s-jeremy-env
         resources:
           limits:
             cpu: 200m

@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 )
 
 func main() {
@@ -20,10 +21,10 @@ func helloworld(w http.ResponseWriter, r *http.Request) {
 	status := http.StatusOK
 	w.WriteHeader(status)
 	w.Write([]byte(`<!DOCTYPE html>
-<html lang="en">
-<head><title>Hello World</title></head>
-<body><h1>Hello World!</h1></body>
-</html>
+	<html lang="en">
+	<head><title>Hello ` + os.Getenv("FIRSTNAME") + `</title></head>
+	<body><h1>Hello ` + os.Getenv("FIRSTNAME") + `</h1></body>
+	</html>
 `))
 }
 
