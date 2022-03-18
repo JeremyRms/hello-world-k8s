@@ -22,8 +22,8 @@ func helloworld(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(status)
 	w.Write([]byte(`<!DOCTYPE html>
 	<html lang="en">
-	<head><title>Hello ` + os.Getenv("FIRSTNAME") + `</title></head>
-	<body><h1>Hello ` + os.Getenv("FIRSTNAME") + `</h1></body>
+	<head><title>Hello ` + os.Getenv("FIRSTNAME") + ` ` + os.Getenv("LASTNAME") + `</title></head>
+	<body><h1>Hello ` + os.Getenv("FIRSTNAME") + ` ` + os.Getenv("LASTNAME") + `</h1></body>
 	</html>
 `))
 }
