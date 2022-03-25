@@ -16,11 +16,11 @@ steps:
   - id: Build
     name: gcr.io/cloud-builders/docker
     entrypoint: bash
-    args: ["-c", "docker build -t hello-world-k8s . -f Dockerfile"]
+    args: ["-c", "docker build -t asia.gcr.io/effective-might-323902/hello-world-k8s-jeremy . -f Dockerfile"]
 
   - id: Push
     name: gcr.io/cloud-builders/docker
-    args: ["push", "asia.gcr.io/effective-might-323902/hello-world-k8s"]
+    args: ["push", "asia.gcr.io/effective-might-323902/hello-world-k8s-jeremy"]
 
   # - id: Prepare deploy
   #   name: gcr.io/cloud-builders/gke-deploy
