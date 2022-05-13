@@ -1,0 +1,9 @@
+apiVersion: builtin
+kind: ConfigMapGenerator
+metadata:
+  name: hello-world-k8s-jeremy-env
+  namespace: jeremy
+envs:
+  - application.properties
+options:
+  disableNameSuffixHash: true

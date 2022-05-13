@@ -1,0 +1,7 @@
+namespace: jeremy
+bases:
+  - ../../base
+generators:
+  - configmap-generator.yaml
+  - secret-generator.yaml
+
