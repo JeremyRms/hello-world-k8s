@@ -18,14 +18,17 @@ func main() {
 
 // helloworld just displays a banner message for testing
 func helloworld(w http.ResponseWriter, r *http.Request) {
+	firstname := os.Getenv("FIRSTNAME")
+	lastname := os.Getenv("LASTNAME")
 	status := http.StatusOK
 	w.WriteHeader(status)
-	w.Write([]byte(`<!DOCTYPE html>
+	w.Write([]byte(fmt.Sprintf(`
+	<!DOCTYPE html>
 	<html lang="en">
-	<head><title>Hello ` + os.Getenv("FIRSTNAME") + ` ` + os.Getenv("LASTNAME") + `</title></head>
-	<body><h1>Hello ` + os.Getenv("FIRSTNAME") + ` ` + os.Getenv("LASTNAME") + `</h1></body>
+		<head><title>Hello %s %s</title></head>
+		<body><h1>Hello %s %s!</h1></body>
 	</html>
-`))
+	`, firstname, lastname, firstname, lastname)))
 }
 
 func check(w http.ResponseWriter, r *http.Request) {
