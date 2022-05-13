@@ -1,0 +1,2 @@
+kustomize/overlays/staging/application.secrets
+kustomize/overlays/production/application.secrets
